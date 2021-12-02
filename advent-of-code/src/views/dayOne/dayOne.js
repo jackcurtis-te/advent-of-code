@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Page, Container, Back, Cover } from "../day.styles";
+import { Container, Back, Cover } from "../day.styles";
+import { HomeContainer } from "../home/home.styles";
 
 export const DayOne = () => { 
   const [input, setInput] = useState([]);
@@ -12,9 +13,8 @@ export const DayOne = () => {
   const calculatePart2 = () => 
     calculate(input.map((cur, i) => Number(input[i-1]) + Number(cur) + Number(input[i+1])));
   
-  return (
-    
-    <Page>
+  return ( 
+    <HomeContainer>
       <Cover/>
       <Container>
         <Back to="/">Back</Back>
@@ -31,6 +31,6 @@ export const DayOne = () => {
         <button onClick={() => setPart2Val(calculatePart2())}>calculate!</button>
         <h1>{`The answer is ${part2Val}`}</h1>
       </Container>
-    </Page>
+    </HomeContainer>
   )
 }

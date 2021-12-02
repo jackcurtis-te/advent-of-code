@@ -1,25 +1,13 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-
-export const Page = styled.div`
-  box-sizing: border-box;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  padding: 20px;
-  gap: 10px;
-  flex-wrap: wrap;
-  max-width: 800px;
-`;
-
 export const Cover = styled.div`
   position: absolute;
   top: 0;
   left:0;
 
-  width: 150%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-color: black;
   @keyframes remove{
     from{
@@ -47,14 +35,13 @@ export const Cover = styled.div`
 
 export const Container = styled.div`
   color: white;
-
-  height: 50%;
-  width: 90%;
+  width: 50%;
+  max-width: 700px;
+  height: fit-content;
 
   display: flex;
   justify-content: center;
   align-items: center;
-
   box-sizing: border-box;
   flex-direction: column;
   padding: 20px;

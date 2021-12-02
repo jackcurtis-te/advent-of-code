@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Page, Container, Back, Cover } from "../day.styles";
+import { Container, Back, Cover } from "../day.styles";
+import { HomeContainer } from "../home/home.styles";
 
 export const DayTwo = () => { 
   const [input, setInput] = useState([]);
@@ -56,7 +57,7 @@ export const DayTwo = () => {
   }
   
   return (
-    <Page>
+    <HomeContainer>
       <Cover/>
       <Container>
         <Back to="/">Back</Back>
@@ -72,6 +73,6 @@ export const DayTwo = () => {
         <button onClick={() => setPart2Val(calculatePart2())}>calculate!</button>
         <h1>{`The answer is ${part2Val}`}</h1>
       </Container>
-    </Page>
+    </HomeContainer>
   )
 }
