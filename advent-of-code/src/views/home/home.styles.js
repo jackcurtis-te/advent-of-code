@@ -8,8 +8,11 @@ export const HomeContainer = styled.div`
   padding: 20px;
   gap: 10px;
   flex-wrap: wrap;
-  max-width: 800px;
+  height: 100vh;
+  overflow-y: scroll;
 
+  align-items: center;
+  justify-content: center;
 `;
 
 export const Door = styled.div`
@@ -27,11 +30,6 @@ export const Door = styled.div`
   align-items: flex-end;
   text-align: right;
   padding: 20px;
-
-  // &:hover {
-  //   animation: ${({ disabled }) => disabled? "none" : "shake 0.5s"};
-  //   animation-iteration-count: infinite;
-  // }
   
   @keyframes shake {
     0% { transform: translate(1px, 1px) rotate(0deg); }
@@ -57,9 +55,9 @@ export const Door = styled.div`
 
 export const Calendar = styled.div`
   color: white;
-
-  height: 50%;
-  width: 90%;
+  width: 50%;
+  max-width: 700px;
+  height: fit-content;
 
   display: flex;
   justify-content: center;

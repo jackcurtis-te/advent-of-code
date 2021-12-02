@@ -1,1 +1,1 @@
-# 30-days-of-code
+# advent-of-code

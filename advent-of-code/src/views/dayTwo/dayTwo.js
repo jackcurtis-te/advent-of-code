@@ -9,7 +9,7 @@ export const DayTwo = () => {
   const handleInput = e => setInput(e.split(" "))
 
   const modifyData = (data = input) => 
-    input.reduce((accumulator, currentValue, currentIndex, array) => {
+    data.reduce((accumulator, currentValue, currentIndex, array) => {
       if (currentIndex % 2 === 0) accumulator.push({ direction: currentValue.toLowerCase(), amount: Number(array[currentIndex+1])});
       return accumulator;
     }, []);
