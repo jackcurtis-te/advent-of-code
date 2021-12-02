@@ -4,10 +4,12 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { Router } from "./views/index"
+import { Snow } from './snow';
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
+      <Snow/>
       <Router/>
     </BrowserRouter>
   </React.StrictMode>,
