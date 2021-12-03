@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import { Home } from './home/home';
 import { DayOne } from './dayOne/dayOne';
 import { DayTwo } from './dayTwo/dayTwo';
+import { DayThree } from './dayThree/dayThree';
 
 export const Router = () => (
   <Routes>
@@ -14,6 +15,10 @@ export const Router = () => (
     <Route
       path="/day2"
       element={<DayTwo/>}
+    />
+    <Route
+      path="/day3"
+      element={<DayThree/>}
     />
     <Route
       path="/"
