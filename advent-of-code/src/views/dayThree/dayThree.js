@@ -30,7 +30,7 @@ export const DayThree = () => {
     let oxy = input;
     vals.forEach((_, i) => oxy = (oxy.length !== 1)? 
       oxy.map((e) => Number(e[i]) === findMostCommon(oxy)[i]? e: null).filter(e => e!= null): 
-      oxy     
+      oxy
     );
 
     let co = input;

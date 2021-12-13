@@ -9,13 +9,13 @@ export const Home = () => {
   const [go, setGo] = useState(false);
 
   const doorClicked = day => {
-    if (!((new Date().getDate()) < day)) {
+    // if (!((new Date().getDate()) < day)) {
       setDoorOpen(day);
       setTimeout(() => {
         setGo(day);
         setTimeout(() => navigate(`/day${day}`), 500);
       }, 500);
-    }
+    // }
   }
 
   return (

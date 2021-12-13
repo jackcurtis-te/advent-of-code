@@ -61,3 +61,7 @@ export const Back = styled(Link)`
   font-size: 16px;
   font-weight: 600;
 `
+
+export const StyledP = styled.p`
+  font-size: 15px;
+`
